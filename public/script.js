@@ -66,7 +66,13 @@ angular.module('app', [])
           };
 
           var ctx = document.getElementById("myChart").getContext("2d")
+          var myLineChart = new Chart(ctx).Line(data);
+         
+          for(var i =0;i<response.data.length;i++){
 
+            if (response.data[i].iot_id==7){
+               myLineChart.addData([response.data[i].temperature, response.data[i].relative_humidity] ,vm.toThaiDateTime(response.data[i].timestamp));
+            }
 
         }
         
