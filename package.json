@@ -1,11 +1,22 @@
 {
   "name": "iot-mongo-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Download ``` $ git clone https://github.com/divHacker/homework-api-mongoose.git $ cd homework-api-mongoose $ npm install ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BoyJirayu/iot-mongo-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BoyJirayu/iot-mongo-server/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {}
 }
