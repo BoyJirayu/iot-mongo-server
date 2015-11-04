@@ -16,16 +16,16 @@ angular.module('app', [])
     }
 
     function getIot () {
-      $http.get('/api/Iot')
+      $http.get('/api/iot')
         .then(function success (response) {
-          vm.Iots = response.data
+          vm.iots = response.data
         }, function error (response) {
           alert(response.data.message)
         })
     }
 
     function saveIot (data) {
-      $http.post('/api/Iot', data)
+      $http.post('/api/iot', data)
         .then(function success (response) {
           console.log(response)
           getIot()
