@@ -12,8 +12,9 @@ angular.module('app', [])
     }
 
     vm.toThaiDateTime = function (date) {
-      return moment(date).fromNow()
+      return moment(date).format('MMMM Do YYYY, h:mm:ss a')
     }
+
 
     function getIot () {
       $http.get('/api/iot')
