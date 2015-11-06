@@ -155,12 +155,12 @@ angular.module('app', [])
                 datasets : [
                   
                     {
-                        fillColor : "rgba(255,255,0,0.6)",
-                        strokeColor : "rgba(72,174,209,0.4)",
+                        fillColor : "rgba(157,111,0,0.6)",
+                        strokeColor : "rgba(13,174,209,0.4)",
                         data : [tem1avg,tem2avg,tem3avg,tem4avg,tem5avg,tem6avg,tem7avg,tem8avg,tem9avg,tem10avg]
                     },
                     {
-                        fillColor : "rgba(0,255,255,0.6)",
+                        fillColor : "rgba(99,22,255,0.6)",
                         strokeColor : "rgba(72,174,209,0.4)",
                         data : [hu1avg,hu2avg,hu3avg,hu4avg,hu5avg,hu6avg,hu7avg,hu8avg,hu9avg,hu10avg]
                     }
