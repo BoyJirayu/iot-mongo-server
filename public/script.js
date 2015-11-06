@@ -65,6 +65,7 @@ angular.module('app', [])
             }]
           };
 
+
           var ctx = document.getElementById("myChart").getContext("2d")
           var myLineChart = new Chart(ctx).Line(data);
          
@@ -82,40 +83,8 @@ angular.module('app', [])
 
     ////////////////////////////////////////////////////
 
-    //register
+    
 
- app.adduser = function(data) {
-  console.log(data);
-        $http.post('/api/member', data)
-          .then(function success (response) {
-            console.log(response)
-            alert('Success')
-          }, function error (response) {
-            alert(response.data.message)
-        })
-      }
-
-//login
-
-app.login = function(input){
-  // console.log(data);
-  $http.post('/login' , { username : input.username , password : input.password})
-       .then(function success (response) {
-            console.log(response.data[0].username)
-            if((input.username== response.data[0].username)&&(input.password == response.data[0].password)){
-              console.log("have user ");
-              
-              window.location= "chart.html"
-            }else{
-              window.location="login.html"
-            }
-
-            app.d = response.data
-          }, function error (response) {
-            alert(response.data.message)
-        })
-
-}
 
 
 
