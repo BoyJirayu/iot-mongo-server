@@ -16,7 +16,7 @@
 <body ng-controller="AppController as appCtrl">
 	<div class="container">
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	
+
 					<ul class="nav navbar-nav">
 						<li><a href="">Report</a></li>
 					</ul>
@@ -30,7 +30,7 @@
 								<li>
 									<div class="row">
 										<div class="col-md-12">
-											<form ng-submit="todoList.login(input)">
+											<form ng-submit="appCtrl.login(input)">
 												<div class="form-group">
 													<h5>Username</h5>
 													<input type="text" class="form-control" ng-model="input.username"/>
@@ -41,7 +41,7 @@
 												</div>
 												
 												<div class="form-group">
-													<button type="submit" class="btn btn-success btn-block glyphicon glyphicon-ok-sign">  Sign in</button>
+													<button type="submit" class="btn btn-success btn-block glyphicon glyphicon-ok-sign">Sign in</button>
 												</div>
 											</form>
 										</div>

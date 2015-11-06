@@ -10,7 +10,7 @@
 		<script src="app.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
-	<body ng-controller="TodoListController as todoList">
+	<body ng-controller="AppController as appCtrl">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -21,7 +21,7 @@
 				</div>
 			</div><!-- /.container-fluid -->
 		</nav>
-		
+
 				<div class="container">
 					<div class="row">
 						<center>
@@ -31,7 +31,7 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3">
 
-						<form class="form-horizonal" ng-submit="todoList.adduser(input)" >
+						<form class="form-horizonal" ng-submit="appCtrl.adduser(input)" >
 							<div class="form-group">
 								<label class="col-sm-2 control-label" >Name</label>
 								<div class="col-sm-10">
