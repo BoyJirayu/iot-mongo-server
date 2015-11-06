@@ -10,7 +10,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use('/', require('./models/member/memberapi.js'))
+app.use('/', require('./models/member/member.route.js'))
 
 var iot = require('./models/iot/iot.route.js')
 app.use('/', iot)
