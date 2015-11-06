@@ -1,26 +1,29 @@
 <!doctype html>
-<html ng-app="todoApp">
+<html ng-app="app">
 	<head>
 		<script src="//code.jquery.com/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
-		<script src="script.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/th.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+  <script src="script.js"></script>
+  <meta charset="utf-8">
+  <script src="Chart.js"></script>
+  <title>Homework</title>
 	</head>
 	<body ng-controller="AppController as appCtrl">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					</button>
-					<a class="navbar-brand" href="index.html">.... INTERNET OF THING .... </a>
-				</div>
-			</div><!-- /.container-fluid -->
-		</nav>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                 </button>
+                    <a id="brand" class="navbar-brand" href="index.html">INTERNET OF THING</a>
+                </div>
+               
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
 
 				<div class="container">
 					<div class="row">
@@ -57,11 +60,11 @@
 								</div>
 							</div>
 							<br>
-								<center><button type="submit" class="btn btn-default glyphicon glyphicon-plus">Register</button></center>
+								<center><button type="submit" class="btn btn-default glyphicon glyphicon-plus">Add</button></center>
 							</form>
 							<hr>
 						</div>
 					</div>
 				</div>
-	</body>
-</html>
+			</body>
+		</html>

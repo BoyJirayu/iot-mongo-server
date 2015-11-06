@@ -249,3 +249,6 @@ angular.module('app', [])
           alert(response.data.message)
         })
     }
+
+
+  })
