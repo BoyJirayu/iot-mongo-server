@@ -227,7 +227,7 @@ angular.module('app', [])
     }
 
     vm.toThaiDateTime = function (date) {
-      return moment(date).format('MMMM Do YYYY, h:mm:ss a')
+      return moment(date).format('Do MMM YYYY')
     }
 
     function getHomeworks () {

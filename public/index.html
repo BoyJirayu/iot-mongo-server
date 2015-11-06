@@ -14,59 +14,59 @@
     <script src="java.js"></script>
         <script src="css.css"></script>
 
-  <title>Homework</title>
+  <title>IOT</title>
   
 </head>
 <body ng-controller="AppController as appCtrl">
-         <nav class="navbar navbar-default">
-			<div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                 </button>
-                    <a id="brand" class="navbar-brand" href="#">INTERNET OF THING</a>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="login.html">login</a></li>
-                        <li><a href="register.html">register</a></li>
-                    </ul>
-                </div><!-- /.nav-collapse -->
-            </div><!-- /.container -->
-        </nav><!-- /.navbar -->
-<!-- // -->
+  <nav class="navbar navbar-default">
+		<div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        </button>
+        <a id="brand" class="navbar-brand" href="#">INTERNET OF THING</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+          	<a href="login.html">login</a>
+          </li>
+          <li>
+          	<a href="register.html">register</a>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+
 <br>
 
 	<div class=container>
-	<!-- <button ng-click="appCtrl.toLog()">login</button>
-		<button ng-click="appCtrl.toRegister()">register</button> -->
 		<div class="row">
 			<div class="col-sm-8">
 				<table class="table">
-<!-- 			  	<caption>Iot_mongoose</caption>
- -->			  	<thead>
+		  		<thead>
 			      <tr>
-			        <th>#</th>
-			        <th>timestamp</th>
-			        <th>iot_id</th>
-			        <th>temperature</th>
-			        <th>relative_humidity</th>
+			        <th>No.</th>
+			        <th>IOT_ID</th>
+			        <th>Temperature</th>
+			        <th>Telative_Humidity</th>
+			        <th>Timestamp</th>
 			      </tr>
 			    </thead>
 			    <tbody>
 			    	<tr ng-repeat="iot in appCtrl.iot">
-				  		<td>{{$index}}</td>
-				  		<td>{{appCtrl.toThaiDateTime(iot.timestamp)}}</td>
+				  		<td>{{$index+1}}</td>
 				  		<td>{{iot.iot_id}}</td>
 				  		<td>{{iot.temperature}}</td>
 				  		<td>{{iot.relative_humidity}}</td>
-
+				  		<td>{{appCtrl.toThaiDateTime(iot.timestamp)}}</td>
 				  	</tr>
 			    </tbody>
 			  </table>
 			</div>
 			<div class="col-sm-4">
+
 				<form ng-submit="appCtrl.submit(input)">
-				 
 				  <div class="form-group">
 				    <label >iot_id</label>
 				    <input type="text" ng-model="input.iot_id" class="form-control" placeholder="iot_id">
@@ -75,7 +75,7 @@
 				    <label >temperature</label>
 				    <input type="text" ng-model="input.temperature" class="form-control" placeholder="temperature">
 				  </div>
-				   <div class="form-group">
+				  <div class="form-group">
 				    <label >relative_humidity</label>
 				    <input type="text" ng-model="input.relative_humidity" class="form-control" placeholder="relative_humidity">
 				  </div>
