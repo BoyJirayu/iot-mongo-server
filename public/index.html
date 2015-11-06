@@ -15,6 +15,43 @@
 </head>
 <body ng-controller="AppController as appCtrl">
 	<div class="container">
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+					<ul class="nav navbar-nav">
+						<li><a href="">Report</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="register.html">Register</a></li>
+						<!-- <li><a href="login.html">Login</a></li> -->
+					<!-- login  -->
+						<li class="dropdown" id = "login">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+							<ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+								<li>
+									<div class="row">
+										<div class="col-md-12">
+											<form ng-submit="todoList.login(input)">
+												<div class="form-group">
+													<h5>Username</h5>
+													<input type="text" class="form-control" ng-model="input.username"/>
+												</div>
+												<div class="form-group">
+													<h5>Password</h5>
+													<input type="text" class="form-control" ng-model="input.password"/>
+												</div>
+												
+												<div class="form-group">
+													<button type="submit" class="btn btn-success btn-block glyphicon glyphicon-ok-sign">  Sign in</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+
 		<canvas id="myChart" width="500" height="500"></canvas>
 		<div class="row">
 			<div class="col-sm-8">
