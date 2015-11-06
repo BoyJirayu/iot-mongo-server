@@ -14,16 +14,19 @@
   <title>Login</title>
 	</head>
 	<body ng-controller="AppController as appCtrl">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header col-md-10">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           </button>
           <a id="brand" class="navbar-brand" href="index.html">INTERNET OF THING</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="collapse navbar-collapse col-md-2">
           <ul class="nav navbar-nav">
-            <li><a href="register.html">register</a></li>
+            <li><a href="register.html">
+            <span class="glyphicon glyphicon-user"></span>
+            Register
+            </a></li>
           </ul>
         </div><!-- /.nav-collapse -->    
       </div><!-- /.container -->
@@ -52,7 +55,7 @@
 						</div>
 						<br>
 						<center>
-							<button type="submit" class="btn btn-default glyphicon glyphicon-plus">login</button>
+							<button type="submit" class="btn btn-info btn-lg btn-block">Login</button>
 						</center>
 					</form>
 					<hr>
