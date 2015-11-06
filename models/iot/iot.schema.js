@@ -5,8 +5,9 @@
   var Schema = mongoose.Schema
 
   var schema = new Schema({
-    iot_id: {
-      type: String,
+    timestamp: { type : Date , default : Date.now},
+    iot_id:{
+      type: Number,
       required: true
     },
     temperature: {
@@ -17,7 +18,6 @@
       type: Number,
       required: true
     },
-    timestamp: { type: Date, default: Date.now }
   })
 
   module.exports = mongoose.model(modelName, schema)
